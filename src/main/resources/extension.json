@@ -1,5 +1,16 @@
 {
   "entrypoint": "${group}.ExtensionMain",
   "name": "${name}",
-  "version": "${version}"
+  "version": "${version}",
+  "dependencies": [
+
+  ],
+  "externalDependencies": {
+    "repositories": [
+
+    ],
+    "artifacts": [
+
+    ]
+  }
 }
