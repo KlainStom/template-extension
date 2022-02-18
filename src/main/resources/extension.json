@@ -1,16 +1,14 @@
 {
-  "entrypoint": "${group}.${name.toLowerCase()}.ExtensionMain",
+  "entrypoint": "com.github.klainstom.${name.toLowerCase()}.ExtensionMain",
   "name": "${name}",
   "version": "${version}",
-  "dependencies": [
-
-  ],
-  "externalDependencies": {
-    "repositories": [
-
-    ],
-    "artifacts": [
-
-    ]
+  "meta": {
+    "github": {
+      "release": {
+        "account": "KlainStom",
+        "repo": "<EXTENSION_REPO_NAME>",
+        "release": "v${version}"
+      }
+    }
   }
 }

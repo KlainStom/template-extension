@@ -10,7 +10,9 @@ plugins {
     id 'java'
 }
 
-def displayName = 'TemplateExtension'
+def displayName = '<EXTENSION_DISPLAY_NAME>'
+def minestomVersion = "be100fa5b8a410258e0da2aa4341cc341a0359a6"
+
 group 'com.github.klainstom'
 version '1.0-SNAPSHOT'
 
@@ -25,9 +27,11 @@ dependencies {
 }
 
 blossom {
-    replaceToken('$version$', version)
-    replaceToken('$group$', group)
-    replaceToken('$name$', displayName)
+    replaceToken("&NAME", displayName.toUpperCase())
+    replaceToken("&Name", displayName)
+    replaceToken("&name", displayName.toLowerCase())
+    replaceToken("&version", version)
+    replaceToken("&minestomVersion", minestomVersion)
 }
 
 processResources.expand(
