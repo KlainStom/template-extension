@@ -19,7 +19,7 @@ tasks {
         replaceToken("&Name", displayName)
         replaceToken("&name", displayName.toLowerCase())
         replaceToken("&version", version)
-        replaceToken("&minestomVersion", libs.versions.minestom)
+        replaceToken("&minestomVersion", libs.versions.minestom.get())
     }
 
     shadowJar {
