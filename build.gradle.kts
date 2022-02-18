@@ -13,8 +13,8 @@ plugins {
 var displayName = "EXTENSION_DISPLAY_NAME"
 var minestomVersion = "be100fa5b8a410258e0da2aa4341cc341a0359a6"
 
-group "com.github.klainstom"
-version "1.0-SNAPSHOT"
+group = "com.github.klainstom"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
