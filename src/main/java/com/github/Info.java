@@ -1,4 +1,4 @@
-package com.github.klainstom;
+package com.github;
 
 import net.minestom.server.MinecraftServer;
 
