@@ -6,7 +6,7 @@ plugins {
 
 var displayName = "EXTENSION_DISPLAY_NAME"
 
-group = "com.github.klainstom"
+group = "com.github.EXTENSION_REPO_LOWER_OWNER"
 version = "1.0-SNAPSHOT"
 
 dependencies {
@@ -40,7 +40,8 @@ tasks {
         expand(
             mapOf(
                 "name" to displayName,
-                "version" to version
+                "version" to version,
+                "mainPackage" to group
             ),
         )
     }
