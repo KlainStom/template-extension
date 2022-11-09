@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.blossom)
-    alias(libs.plugins.shadowJar)
+    id("net.kyori.blossom") version "1.2.0"
+    id("com.github.johnrengelman.shadow") version "7.1.2"
     java
 }
 
